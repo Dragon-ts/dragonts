@@ -11,10 +11,15 @@
     font-size: 25px;
 }
 
+.versionall
+{
+    margin-top: 10px;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+}
+
 .version
 {
-    margin-top: 20px;
-    text-align: center;
-    height: 70px;
-    width: 250px;
+    line-height: 70%;
 }
