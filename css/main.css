@@ -2,3 +2,11 @@
 {
     background-color: rgb(255, 232, 204)
 }
+
+.maintime
+{
+    text-align:right;
+    width: 750px;
+    height: 45px;
+    color: rgb(0, 16, 160);
+}
