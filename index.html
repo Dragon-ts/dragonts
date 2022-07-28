@@ -8,6 +8,7 @@
     <link href="minecraft.png" rel="shortcut icon">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <script src="js/play.js"></script>
 </head>
 <body class="mainbody">
     <div style="padding:2px;text-align: center;">
@@ -22,14 +23,20 @@
     </div>
     <div style="float:left">
         <img src="minecraft.png" width="480" height="270">
+        <div>
+            <button type="button" id="button2" onclick="play()">点击这里</button>
+            <button type="button" id="button" onclick="play2()"></button>
+        </div>
         <p class="github">github开源网站</p>
-        <a href="bonus.html" class="self">Made by Dragon_ts</a>
+        <a class="self">Made by Dragon_ts</a>
         <p></p>
         <a href="phigros.html" class="phigros">这是自己做的一个phigros表格,欢迎大家下载!</a>
         <p></p>
         <button type="button" style="height: auto;width: auto;color: darkgray;">
             <a href="summer.html" style="margin: 15px;color:cornflowerblue;font-size: large;">限时开启暑假须知区</a>
         </button>
+        <p></p>
+        <button type="button" onclick="bonus()" style="background-color: rgb(255, 232, 204);outline: none;border: none;">ps.网站里有好康的呦~可以找找~</button>
     </div>
 </body>
 </html>
