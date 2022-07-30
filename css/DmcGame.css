@@ -1,0 +1,57 @@
+.team
+{
+    font-size: 30px;
+}
+
+.orange
+{
+    color: rgb(222, 154, 91);
+}
+
+.green
+{
+    color: rgb(165, 196, 71)
+}
+
+.gray
+{
+    color: rgb(186,181,169)
+}
+
+.cyan
+{
+    color: rgb(147,219,196)
+}
+
+.pink
+{
+    color: rgb(222,162,197)
+}
+
+.purple
+{
+    color: rgb(182,149,201)
+}
+
+.text
+{
+    padding-right:20px;
+    padding-bottom: 15px;
+}
+
+.textvertical
+{
+    border-bottom: 10px;
+}
+
+.live
+{
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.link
+{
+    color: cornflowerblue;
+    text-decoration: none;
+}
