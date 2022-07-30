@@ -1,0 +1,34 @@
+.center
+{
+    text-align: center;
+}
+
+.time
+{
+    width: auto;
+    height: 60px;
+    text-align: right;
+    margin-right:100px;
+}
+
+.button
+{
+    height: 60px;
+    width:350px;
+    background-color: rgb(190, 216, 145);
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.buttonclick:hover
+{
+    background-color: rgb(170, 194, 131);
+}
+
+.text
+{
+    font-size:20px;
+    color: rgb(100, 154, 255);
+    text-decoration: none;
+}
