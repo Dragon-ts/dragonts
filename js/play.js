@@ -23,3 +23,15 @@ function play2(){
 function sth(){
     window.open("bonus.html")
 }
+
+function intro(){
+    window.location.href="DMC/intro.html";
+}
+
+function game(){
+    window.location.href="DMC/game.html"
+}
+
+function team(){
+    window.location.href="DMC/team.html"
+}
