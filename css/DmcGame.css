@@ -55,3 +55,16 @@
     color: cornflowerblue;
     text-decoration: none;
 }
+
+.otherlink
+{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: large;
+}
+
+.otherlive
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
