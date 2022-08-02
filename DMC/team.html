@@ -9,7 +9,37 @@
     <link href="../css/mainDMC.css" rel="stylesheet">
 </head>
 <body class="mainDmcColor">
-    <strong style="padding-left: 100px;">我是标题</strong>
+    <h1 style="text-align: center;">DMC队伍分配</h1>
+    <div style="text-align: center;">
+        <div style="float: center;">
+            <h3 style="color: cornflowerblue">距离比赛开始还有<span id="demo"></span></h3>
+        </div>
+
+    </div>
+    <script>
+    var countDownDate = new Date("Aug 7, 2022 15:37:25").getTime();
+    
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+        
+      var distance = countDownDate - now;
+        
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("demo").innerHTML = days + "天 " + hours + "时 "
+      + minutes + "分 " + seconds + "秒 ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "游戏已开始!";
+      }
+    }, 1000);
+    </script>
+    
+    </div>
     <p></p>
     <table style="width: 1024px;">
         <tr class="textvertical">
@@ -18,70 +48,60 @@
             <th class="text">队员</th>
             <th class="text">队员</th>
             <th class="text">队员</th>
-            <th class="text">队员</th>
-            <th class="text">队员</th>
             <th class="live">直播链接</th>
         </tr>
         <tr class="textvertical">
             <th class="team text orange">橙队</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="live"><a href="https://www.bilibili.com" class="link">橙队直播链接</a></th>
+            <th class="text orange">久恋</th>
+            <th class="text">威尔</th>
+            <th class="text">common</th>
+            <th class="text">Edward</th>
+            <th class="live"><a href="https://live.bilibili.com/24075531" class="link">橙队直播链接</a></th>
         </tr>
         <tr class="textvertical">
             <th class="team text green">绿队</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
+            <th class="text green">DreamsMom</th>
+            <th class="text">青梅会发黑</th>
+            <th class="text">清波堂主</th>
+            <th class="text">鳕鱼</th>
             <th class="live"><a href="https://www.bilibili.com" class="link">绿队直播链接</a></th>
         </tr>
         <tr class="textvertical">
             <th class="team text gray">灰队</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="live"><a href="https://www.bilibili.com" class="link">灰队直播链接</a></th>
+            <th class="text gray">战争</th>
+            <th class="text">咪咪</th>
+            <th class="text">whycanC</th>
+            <th class="text">Outlier</th>
+            <th class="live"><a href="https://live.bilibili.com/24736486" class="link">灰队直播链接</a></th>
         </tr>
         <tr class="textvertical">
             <th class="team text cyan">青队</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
+            <th class="text cyan">剑毓</th>
+            <th class="text">洛飖</th>
+            <th class="text">黑科技</th>
+            <th class="text">村纱水密</th>
             <th class="live"><a href="https://www.bilibili.com" class="link">青队直播链接</a></th>
         </tr>
         <tr class="textvertical">
             <th class="team text pink">粉队</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="live"><a href="https://www.bilibili.com" class="link">粉队直播链接</a></th>
+            <th class="text pink">小鸡腿</th>
+            <th class="text">苓柒</th>
+            <th class="text">viewmer</th>
+            <th class="text">蓝桉青鹧</th>
+            <th class="live"><a href="https://live.bilibili.com/24456449" class="link">粉队直播链接</a></th>
         </tr>
         <tr class="textvertical">
             <th class="team text purple">紫队</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
-            <th class="text">xxx</th>
+            <th class="text purple">小黑</th>
+            <th class="text">午夜</th>
+            <th class="text">芒果</th>
+            <th class="text">创意文学社</th>
             <th class="live"><a href="https://www.bilibili.com" class="link">紫队直播链接</a></th>
         </tr>
     </table>
+    <div class="otherlive">
+        <h2 style="color: rgb(31, 86, 189);">其他直播区:</h2>
+        <a href="https://live.bilibili.com/24419689" class="otherlink">近景直播 Dragon_ts</a>
+    </div>
 </body>
 </html>
