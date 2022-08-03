@@ -1,18 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hans">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DMC各个游戏简介</title>
     <link href="../css/DMC.css" rel="stylesheet">
-    <link href="css/mainDMC.css" rel="stylesheet">
+    <link href="../css/mainDMC.css" rel="stylesheet">
+    <link href="../css/DmcGame.css" rel="stylesheet">
     <script src="../js/DMC.js"></script>
+    <script src="../js/time.js"></script>
 </head>
-<body>
-    <strong>我是标题</strong>
+<body class="mainDmcColor">
+    <div style="text-align: center;margin-bottom: 40px;">
+        <strong style="color:cornflowerblue;font-size: 30px;">各游戏简介</strong>
+    </div>
+    <div style="text-align: center;">
+        <div style="float: center;">
+            <h3 style="color: cornflowerblue">距离比赛开始还有<span id="demo"></span></h3>
+        </div>
+    </div>
+    <script>
+    var countDownDate = new Date("Aug 7, 2022 19:30:00").getTime();
+    
+    var x = setInterval(function() {
+    
+      var now = new Date().getTime();
+        
+      var distance = countDownDate - now;
+        
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("demo").innerHTML = days + "天 " + hours + "时 "
+      + minutes + "分 " + seconds + "秒 ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "游戏已开始!";
+      }
+    }, 1000);
+    </script>
+    <div id="dateTime" class="time">
+        <script src="js/time.js"></script>
+    </div>
     <div class="center">
         <button class="button buttonclick" onclick="bladeBattle()">
             <p class="text">Blade Battle</p>
+        </button>
+        <p></p>
+        <button class="button buttonclick" onclick="parkourMaster()">
+            <p class="text">Parkour Master</p>
+        </button>
+        <p></p>
+        <button class="button buttonclick" onclick="race()">
+            <p class="text">Race++</p>
+        </button>
+        <p></p>
+        <button class="button buttonclick" onclick="darkside()">
+            <p class="text">Darkside</p>
+        </button>
+        <p></p>
 </body>
 </html>
