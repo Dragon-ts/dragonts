@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMC时间表</title>
+    <link href="../css/DmcGame.css" rel="stylesheet">
+    <link href="../css/DMC.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/mainDMC.css" rel="stylesheet">
+    <script src="../js/DMC.js"></script>
+    <script src="../js/calendar.js"></script>
+</head>
+<body class="mainDmcColor">
+    <div class="center">
+        <h1>实时时间表</h1>
+    </div>
+    <div style="text-align: center;">
+        <div style="float: center;">
+            <h3 style="color: cornflowerblue">距离比赛开始还有<span id="demo"></span></h3>
+        </div>
+    </div>
+    <div id="dateTime" class="time">
+        <script src="../js/time.js"></script>
+    </div>
+    <table style="width: 1024px;margin-left: 100px;text-align: center;">
+        <tr class="textvertical" style="text-align:center">
+            <th style="color:brown;padding-right:20px;padding-bottom: 15px;">事件</th>
+            <th style="color:brown;padding-right:20px;padding-bottom: 15px;">预计开始时间</th>
+            <th style="color:brown;padding-right:20px;padding-bottom: 15px;">情况</th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">进入服务器</th>
+            <th class="text">18:45</th>
+            <th class="text" id="inServer"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">大厅寻找彩蛋</th>
+            <th class="text">18:50</th>
+            <th class="text" id="lobby"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">队伍介绍&队长宣言</th>
+            <th class="text">19:20</th>
+            <th class="text" id="teamHead"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text"></th>
+            <th class="text">===游戏正式开始===</th>
+            <th class="text"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">投票</th>
+            <th class="text">19:30</th>
+            <th class="text" id="vote"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">未知:第一个比赛项目</th>
+            <th class="text">大约19:40</th>
+            <th class="text" id="1st"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">未知:第二个比赛项目</th>
+            <th class="text">大约20:00</th>
+            <th class="text" id="2nd"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">未知:第三个比赛项目</th>
+            <th class="text">大约20:20</th>
+            <th class="text" id="3rd"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">决赛:DarkSide</th>
+            <th class="text">大约20:40</th>
+            <th class="text" id="darkSide"></th>
+        </tr>
+        <tr class="textvertical">
+            <th class="text">总结</th>
+            <th class="text">大约21:00</th>
+            <th class="text" id="All"></th>
+        </tr>
+    </table>   
+</body>
