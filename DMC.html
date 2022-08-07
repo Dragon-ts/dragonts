@@ -9,8 +9,9 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/mainDMC.css" rel="stylesheet">
     <script src="js/play.js"></script>
+    <script src="js/DMC.js"></script>
 </head>
-<body class="mainDmcColor">
+<body class="mainDmcColor" onload="demo">
     <div class="center">
         <h1>DMC,全称DreamsMom Championship</h1>
     </div>
@@ -20,28 +21,6 @@
         </div>
 
     </div>
-    <script>
-    var countDownDate = new Date("Aug 7, 2022 19:30:00").getTime();
-    
-    var x = setInterval(function() {
-    
-      var now = new Date().getTime();
-        
-      var distance = countDownDate - now;
-        
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById("demo").innerHTML = days + "天 " + hours + "时 "
-      + minutes + "分 " + seconds + "秒 ";
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "游戏已开始!";
-      }
-    }, 1000);
-    </script>
     <div id="dateTime" class="time">
         <script src="js/time.js"></script>
     </div>
@@ -62,8 +41,12 @@
             <p class="text">鸣谢名单</p>
         </button>
         <p></p>
+        <button class="button buttonclick" onclick="program()">
+            <p class="text">时间表</p>
+        </button>
+        <p></p>
         <button class="button buttonclick" onclick="enderman()">
-            <p class="text">小黑做的</p>
+            <p class="text">特别:小黑网站</p>
         </button>        
     </div>
 </body>
