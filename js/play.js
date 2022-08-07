@@ -35,3 +35,15 @@ function game(){
 function team(){
     window.location.href="DMC/team.html"
 }
+
+function list(){
+    window.location.href="DMC/list.html"
+}
+
+function program(){
+    window.location.href="DMC/calendar.html"
+}
+
+function enderman(){
+    window.open("https://dmc.xfcloud.org")
+}
