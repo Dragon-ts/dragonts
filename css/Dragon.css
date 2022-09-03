@@ -1,0 +1,28 @@
+.button
+{
+    height: 60px;
+    width:350px;
+    background-color: rgb(208, 186, 248);
+    border: none;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.buttonclick:hover
+{
+    background-color: rgb(177, 128, 223);
+}
+
+.text
+{
+    font-size:22px;
+    color: #FF9966;
+    text-decoration: none;
+    float:none;
+    text-align: center;
+}
+
+.center
+{
+    text-align: center;
+}
