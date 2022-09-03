@@ -13,3 +13,7 @@ function soon(){
 function bug(){
     window.location.href='bug.html'
 }
+
+function qq(){
+    window.location.href='qq.html'
+}
