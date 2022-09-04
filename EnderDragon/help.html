@@ -5,31 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/Dragon.css" rel="stylesheet">
     <script src="../js/Dragon.js"></script>
     <title>末影龙姐姐帮助中心</title>
 </head>
 <body class="mainbody">
-    <div id="container">
-        <div id="header" style="text-align: center;background-color:#FFA500;">
-            <h1 style="margin-bottom:0;">1</h1>
+    <div>
+        <div class="titlediv">
+            <h1 class="titleh1">指令帮助</h1>
         </div>
         
-        <div id="menu" style="background-color:#FFD700;width: 100px;float:left;text-align: center;">
+        <div class="menu">
             <p></p>
-            <div style="width:100px;text-align: center;height: 50px;">
-            <a style="font-size: large;color: rgb(90, 36, 179);" onclick="help()">指令帮助</a>
+            <div class="leftdiv">
+                <a class="lefta" onclick="help()">指令帮助</a>
             </div>
-            <div style="width:100px;text-align:center;height:50px">
-            <a style="font-size: large;color: rgb(90, 36, 179);" onclick="update()">更新日志</a>
+            <div class="leftdiv">
+                <a class="lefta" onclick="update()">更新日志</a>
             </div>
-            <div style="width:100px;text-align:center;height:50px">
-            <a style="font-size: large;color: rgb(90, 36, 179);" onclick="soon()">近期安排</a>
+            <div class="leftdiv">
+                <a class="lefta" onclick="soon()">近期安排</a>
             </div>
-            <div style="width:100px;text-align:center;height:50px">
-            <a style="font-size: large;color: rgb(90, 36, 179);" onclick="bug()">所有bug</a>
+            <div class="leftdiv">
+                <a class="lefta" onclick="bug()">所有bug</a>
             </div>
-            <div style="width:100px;text-align:center;height:50px">
-            <a style="font-size: large;color: rgb(90, 36, 179);" onclick="qq()">末影龙姐姐主人QQ号</a>
+            <div class="leftdiv">
+                <a class="lefta" onclick="qq()">末影龙姐姐主人QQ号</a>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="textdiv">
+            <p class="top"></p>
+            <div>
+                <div>
+                    <h1 class="word h11">基础指令</h1>
+                </div>
+                <div>
+                    <h2 class="word h22">获取时间</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">现在时间</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44">@&lt;nickname&gt; 现在是yyyy-MM-dd hh:mm:ss</h4>
+                </div>
+                <div>
+                    <h2 class="word h22">获取可用命令</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">menu | 菜单 | help</h4>
+                </div>
+                <div>
+                    <h2 class="word h22">获取群号</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">@末影龙姐姐 群号</h4>
+                    <h5 class="word h55">*提示 @不能复制,必须@到才可以</h5>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h5 class="word h55">(单位:行)</h5>
+                    <h4 class="word h44">1 这是本群的群号~</h4>
+                    <h4 class="word h44">2 &lt;group_id&gt;</h4>
+                </div>
+                <div>
+                    <h2 class="word h22">发公告</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">发公告 &lt;公告内容&gt;</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44">(公告)&lt;内容&gt;</h4>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h1 class="word h11">趣味指令</h1>
+                </div>
+                <div>
+                    <h2 class="word h22">戳某人</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">戳 &lt;要戳的人的QQ号&gt;</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44">(戳一戳内容)末影龙姐姐 戳了戳 &lt;nickname&gt;</h4>
+                </div>
+                <div>
+                    <h2 class="word h22">二次元的我</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">/二次元的我</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44">二次元少女的&lt;nickname&gt;,&lt;随机形容词&gt;</h4>
+                </div>
+                <div>
+                    <h2 class="word h22">每日幸运指数</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">today | 幸运指数</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44">@&lt;nickname&gt;您今日的幸运指数是&lt;int&gt;</h4>
+                </div>
+                <div>
+                    <h2 class="word h22">舔狗日记</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">舔狗日记</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h5 class="word h55">(单位:行)</h5>
+                    <h4 class="word h44">1 请稍等一会呢~</h4>
+                    <h4 class="word h44">2 &lt;随机舔狗日记&gt;</h4>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h1 class="word h11">查询指令</h1>
+                </div>
+                <div>
+                    <h2 class="word h22">查询@我的人以及时间</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">/谁@我 | /谁at我 | 谁at我</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44">如有人@:</h4>
+                    <h5 class="word h55">(合并转发信息)xx在xx时间发送xx</h5>
+                    <h4 class="word h44">如无人@:</h4>
+                    <h5 class="word h55">(回复)目前还没有人@您噢！</h5>
+                </div>
+                <div>
+                    <h2 class="word h22">查询群员信息</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">获取 &lt;要戳的人的QQ号&gt;</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44" style="text-decoration:line-through">返回信息懒得写了自己试试罢</h4>
+                </div>
+                <div>
+                    <h2 class="word h22">查询群信息</h2>
+                    <h3 class="word h33">格式:</h3>
+                    <h4 class="word h44">获取 &lt;要查的群号&gt;</h4>
+                    <h3 class="word h33">返回信息:</h3>
+                    <h4 class="word h44" style="text-decoration:line-through">返回信息懒得写了自己试试罢</h4>
+                </div>
             </div>
         </div>
     </div>
