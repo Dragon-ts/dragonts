@@ -26,3 +26,95 @@
 {
     text-align: center;
 }
+
+.top
+{
+    margin-top: 0px;
+    padding-top: 10px;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+.word
+{
+    word-wrap: break-word;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+
+}
+
+.h11
+{
+    margin-bottom: 30px;
+    padding-left: 100px;
+    color: red;
+}
+
+.h22
+{
+    margin-bottom: 20px;
+    padding-left: 110px;
+}
+
+.h33
+{
+    margin-bottom: 15px;
+    padding-left: 120px;
+}
+
+.h44
+{
+    margin-bottom: 10px;
+    padding-left: 135px;
+}
+
+.h55
+{
+    margin-bottom: 5px;
+    padding-left: 150px;
+}
+
+.leftdiv
+{
+    width:100px;
+    text-align: center;
+    height: 70px;
+}
+
+.lefta
+{
+    font-size: large;
+    color: rgb(90, 36, 179);
+}
+
+.menu
+{
+    background-color:#fcd181;
+    width: 100px;
+    height: 800px;
+    float:left;
+    text-align: center;
+}
+
+.titlediv
+{
+    text-align: center;
+    background-color:#ffd3f2;
+}
+
+.titleh1
+{
+    margin-bottom:0;
+    color: purple;
+}
+
+.textdiv
+{
+    background-color: rgb(219, 219, 219);
+    height: auto;
+    width: auto;
+    margin-top: 0px;
+    float: inline-start;
+    padding-left: 30px;
+}
