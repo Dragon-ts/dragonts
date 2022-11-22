@@ -1,157 +1,360 @@
 <!DOCTYPE html>
-<html lang="zh-hans">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/main.css" rel="stylesheet">
-    <link href="../css/Dragon.css" rel="stylesheet">
-    <script src="../js/Dragon.js"></script>
+    <link rel="stylesheet" href="../css/main-container.css">
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/left-cmd-nav.css">
+    <script src="../js/left-nav.js"></script>
     <title>末影龙姐姐帮助中心</title>
 </head>
-<body class="mainbody">
-    <div>
-        <div class="titlediv">
-            <h1 class="titleh1">指令帮助</h1>
-        </div>
-        
-        <div class="menu">
-            <p></p>
-            <div class="leftdiv">
-                <a class="lefta" onclick="help()">指令帮助</a>
-            </div>
-            <div class="leftdiv">
-                <a class="lefta" onclick="update()">更新日志</a>
-            </div>
-            <div class="leftdiv">
-                <a class="lefta" onclick="soon()">近期安排</a>
-            </div>
-            <div class="leftdiv">
-                <a class="lefta" onclick="bug()">所有bug</a>
-            </div>
-            <div class="leftdiv">
-                <a class="lefta" onclick="qq()">末影龙姐姐主人QQ号</a>
-            </div>
-            <div>
-            </div>
-        </div>
-        <div style="float:right;background-color:rgb(255, 196, 174);width: 150px;height: 100px;">
-            <div>
-                <h4 style="margin: 0px">---未来的公告区---</h4>
-            </div>
 
-        </div>
-        <div class="textdiv">
-            <p class="top"></p>
-            <div>
-                <div>
-                    <h1 class="word h11">注 命令与参数间需要一个空格！</h1>
-                </div>
-                <div>
-                    <h1 class="word h11">基础指令</h1>
-                </div>
-                <div>
-                    <h2 class="word h22">获取时间</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">现在时间</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44">@&lt;nickname&gt; 现在是yyyy-MM-dd hh:mm:ss</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">获取可用命令</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">menu | 菜单 | help</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">重复文字</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">@末影龙姐姐/echo &lt;想重复的内容&gt;</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44">&lt;你发送的内容&gt;</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">获取群号</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">@末影龙姐姐 群号</h4>
-                    <h5 class="word h55">*提示 @不能复制,必须@到才可以</h5>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h5 class="word h55">(单位:行)</h5>
-                    <h4 class="word h44">1 这是本群的群号~</h4>
-                    <h4 class="word h44">2 &lt;group_id&gt;</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">发公告</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">发公告 &lt;公告内容&gt;</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44">(公告)&lt;内容&gt;</h4>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h1 class="word h11">趣味指令</h1>
-                </div>
-                <div>
-                    <h2 class="word h22">戳某人</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">戳 &lt;要戳的人的QQ号&gt;</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44">(戳一戳内容)末影龙姐姐 戳了戳 &lt;nickname&gt;</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">二次元的我</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">/二次元的我</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44">二次元少女的&lt;nickname&gt;,&lt;随机形容词&gt;</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">每日幸运指数</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">today | 幸运指数</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44">@&lt;nickname&gt;您今日的幸运指数是&lt;int&gt;</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">舔狗日记</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">舔狗日记</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h5 class="word h55">(单位:行)</h5>
-                    <h4 class="word h44">1 请稍等一会呢~</h4>
-                    <h4 class="word h44">2 &lt;随机舔狗日记&gt;</h4>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h1 class="word h11">查询指令</h1>
-                </div>
-                <div>
-                    <h2 class="word h22">查询@我的人以及时间</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">/谁@我 | /谁at我 | 谁at我</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44">如有人@:</h4>
-                    <h5 class="word h55">(合并转发信息)xx在xx时间发送xx</h5>
-                    <h4 class="word h44">如无人@:</h4>
-                    <h5 class="word h55">(回复)目前还没有人@您噢！</h5>
-                </div>
-                <div>
-                    <h2 class="word h22">查询群员信息</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">获取 &lt;要查的人的QQ号&gt;</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44" style="text-decoration:line-through">返回信息懒得写了自己试试罢</h4>
-                </div>
-                <div>
-                    <h2 class="word h22">查询群信息</h2>
-                    <h3 class="word h33">格式:</h3>
-                    <h4 class="word h44">查询群 &lt;要查的群号&gt;</h4>
-                    <h3 class="word h33">返回信息:</h3>
-                    <h4 class="word h44" style="text-decoration:line-through">返回信息懒得写了自己试试罢</h4>
-                </div>
-            </div>
-        </div>
+<body style="background-color:rgb(250, 231, 244)">
+    <!--顶部导航栏-->
+    <div class="nav-bar clearfix">
+        <a class="item selection selected" href="help.html"><span>指令帮助</span></a>
+        <a class="item selection" href="update.html"><span>更新日志</span></a>
+        <a class="item selection" href="soon.html"><span>近期安排</span></a>
+        <a class="item selection right" href="bug.html"><span>所有bug</span></a>
+        <a class="item selection right" href="qq.html"><span>末影龙姐姐主人QQ号</span></a>
     </div>
+
+    <!--主要内容-->
+    <div class="main-container" id="ghost">
+        <!--左边的导航栏,使用js获取所有信息-->
+        <div class="column-left-nav">
+            <div class="card" id="left-nav-data-div">
+
+                <div id="nav-cmd-sets-title-template" class="template">
+                    <h4 class="cmd-sets-title">null. null指令集</h4>
+                </div>
+                <div id="nav-cmd-template" class="template">
+                    <a class="cmd" href="#">null指令</a>
+                </div>
+            </div>
+        </div>
+        <!--指令s-->
+        <div class="column-main">
+            <h2 class="card" id="space-warning">
+                注: 命令与参数间需要一个空格！
+            </h2>
+            <div class="card commandSets" id="basic-commands">
+                <h3>1. 基础指令</h3><br>
+                <div class="command-info">
+                    <span class="command-name">获取时间</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">现在时间</span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="variable">@&lt;nickname&gt;</span> 现在是yyyy-MM-dd hh:mm:ss
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">获取可用命令</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        menu
+                        <abbr class="cmt" title="或者">or</abbr>
+                        菜单
+                        <abbr class="cmt" title="或者">or</abbr>
+                        help
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">重复文字</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        <abbr class="cmt" title="注意是实体@,纯文字不起效">@末影龙姐姐</abbr>
+                        /echo
+                        <span class="variable">&lt;想重复的内容&gt;</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="variable">&lt;你发送的内容&gt;</span>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">获取群号</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        <abbr class="cmt" title="注意是实体@,纯文字不起效">@末影龙姐姐</abbr>
+                        群号
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <p>这是本群的群号~</p>
+                        <p><span class="variable">&lt;group_id&gt;</span></p>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">发公告</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        发公告
+                        <span class="variable">&lt;群号&gt;</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="special-return">特殊信息:</span><span> &lt;公告&gt; 
+                            <span class="variable">&lt;公告内容&gt;</span>
+                        </span>
+                    </span>
+                </div>
+
+            </div>
+            <div class="card commandSets" id="funny-commands">
+                <h3>2. 趣味指令</h3><br>
+                <div class="command-info">
+                    <span class="command-name">每日幸运指数</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        today
+                        <abbr class="cmt" title="或者">or</abbr>
+                        幸运指数
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="variable">@&lt;nickname&gt;</span>您今日的幸运指数是<span class="variable">&lt;幸运指数&gt;</span>
+                    </span>
+                </div>
+                
+                <div class="command-info">
+                    <span class="command-name">戳某人</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        戳
+                        <span class="variable">&lt;被戳的人的QQ号&gt;</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="special-return">特殊信息:</span>
+                        <span>&lt;戳一戳内容&gt;末影龙姐姐 戳了戳 <span class="variable">&lt;nickname&gt;</span></span>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">二次元的我</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        /二次元的我
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        二次元少女的<span class="variable">&lt;nickname&gt;,&lt;随机形容词&gt;</span>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">舔狗日记</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        舔狗日记
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <p>请稍等一会呢~</p>
+                        <span class="variable">&lt;随机舔狗日记&gt;</span>
+                    </span>
+                </div>
+                <div class="command-info">
+                    <span class="command-name">心灵鸡汤</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        心灵鸡汤
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="variable">&lt;随机心灵鸡汤&gt;</span>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">闹钟</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        新建闹钟
+                        <span class="variable">&lt;小时&gt;</span>
+                        :
+                        <span class="variable">&lt;分钟&gt;</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        设置成功
+                        <p></p>
+                        <span class="special-return">到达设定时间时:</span>
+                        您设置的闹钟到时间啦~
+                    </span>
+                </div>
+                
+            </div>
+            <div class="card commandSets" id="game-commands">
+                <h3>3. 游戏指令</h3><br>
+
+                <div class="command-info">
+                    <span class="command-name">猜数游戏</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        开始猜数
+                        <abbr class="cmt" title="或者">or</abbr>
+                        猜<span class="variable">&lt;想猜的数&gt;</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <p>您猜的数小<abbr class="cmt" title="或者">or</abbr>大了!当前范围为...</p>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">井字棋游戏</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        开始井字棋
+                        <abbr class="cmt" title="或者">or</abbr>
+                        加入井字棋
+                        <abbr class="cmt" title="或者">or</abbr>
+                        落<span class="variable">&lt;横坐标&gt;</span> <span class="variable">&lt;纵坐标&gt;</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        创建
+                        <abbr class="cmt" title="或者">or</abbr>
+                        加入 游戏成功!
+                        <p><span class="variable">&lt;当前棋盘&gt;</span></p>
+                    </span>
+                </div>
+            </div>
+            <div class="card commandSets" id="query-commands">
+                <h3>4. 查询指令</h3><br>
+
+                <div class="command-info">
+                    <span class="command-name">查询@我的人以及时间</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        /谁@我
+                        <abbr class="cmt" title="或者">or</abbr>
+                        /谁at我
+                        <abbr class="cmt" title="或者">or</abbr>
+                        谁at我
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <p><span class="special-return">如有人@:</span></p>
+                        <p><span class="variable">&lt;合并转发信息&gt;</span></p>
+                        <p><span class="special-return">如无人@:</span></p>
+                        <p>目前还没有人@您噢！</p>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">查询天气</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        天气
+                        <span class="variable">&lt;城市名&gt;</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="variable">&lt;城市名&gt;</span>
+                        天气信息
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">查询群员信息</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        获取 <span class="variable">要查的人的QQ号</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        懒得写了()
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">查询群信息</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        查询群 <span class="variable">要查的群号</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        懒得写了()
+                    </span>
+                </div>
+            </div>
+            <div class="card commandSets" id="query-commands">
+                <h3>5. 龙息指令</h3><br>
+
+                <div class="command-info">
+                    <span class="command-name">签到</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        签到
+                        <abbr class="cmt" title="或者">or</abbr>
+                        check
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <p><span class="special-return">如未签到:</span></p>
+                        <p>签到成功!当前您有<span class="variable">&lt;龙息量&gt;</span></p>
+                        <p><span class="special-return">如已签到:</span></p>
+                        <p>您已签到!当前您有<span class="variable">&lt;龙息量&gt;</span></p>
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">抽奖</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        抽奖
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        您抽到了
+                        <span class="variable">&lt;-3ml并抽取0-6ml随机数&gt;</span>
+                        ml龙息
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">偷龙息</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        steal <span class="variable">要偷的QQ号</span>
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        您偷来
+                        <abbr class="cmt" title="或者">or</abbr>
+                        被反偷了
+                        <span class="variable">&lt;随机数&gt;</span>
+                        ml龙息
+                    </span>
+                </div>
+
+                <div class="command-info">
+                    <span class="command-name">排行榜</span>
+                    <span class="command-form">格式:</span>
+                    <span class="command-form-ins">
+                        龙息排行榜
+                    </span>
+                    <span class="command-return">返回信息:</span>
+                    <span class="command-return-ins">
+                        <span class="variable">&lt;1st-10th&gt;</span>
+                        QQ号及龙息
+                </div>
+            </div>
+        </div>
 </body>
+
+<script src="../js/site.js"></script>
+
 </html>
