@@ -3,17 +3,17 @@ function help(){
 }
 
 function update(){
-    window.location.href='update.html'
+    window.alert('当你看到了这条消息,就证明ts又在咕咕咕了')
 }
 
 function soon(){
-    window.location.href='soon.html'
+    window.alert('当你看到了这条消息,就证明ts又在咕咕咕了')
 }
 
 function bug(){
-    window.location.href='bug.html'
+    window.alert('当你看到了这条消息,就证明ts又在咕咕咕了')
 }
 
 function qq(){
-    window.location.href='qq.html'
+    window.alert('当你看到了这条消息,就证明ts又在咕咕咕了')
 }
